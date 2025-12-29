@@ -40,7 +40,7 @@ The repo is organized into two main folders, each providing:
 ├── results/                    # Output directory (created after running)
 └── README.md
 
-
+```text
 ---
 
 ## Prompting & Parsing
