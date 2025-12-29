@@ -3,7 +3,7 @@
 This repository contains materials and code accompanying our Pattern Recognition submission on evaluating **multimodal large language models (MLLMs)** for facial emotion understanding under two diagnostic settings:
 
 1) **Semantic Conflict (Composite Faces)** — emotion perception under **cross-region semantic conflict** (e.g., top vs. bottom facial halves).
-2) **Information_Scarcity_eye** — fine-grained reasoning focused on **eye-region cues** under controlled presentation.
+2) **Information Scarcity (Eye vs Eyebrow+Eye vs Whole face)** — fine-grained reasoning focused on **eye-region cues** under controlled presentation.
 
 The repo is organized into two main folders, each providing:
 - **Stimulus/material construction pipeline**
@@ -39,3 +39,28 @@ The repo is organized into two main folders, each providing:
 │
 ├── results/                    # Output directory (created after running)
 └── README.md
+
+
+---
+
+## Prompting & Parsing
+
+Prompt templates live in each task folder under `prompts/`.
+We recommend keeping:
+
+- a single canonical prompt per task
+- strict output schema (e.g., JSON) for reliable parsing
+- a clear retry policy for invalid outputs (logged transparently)
+
+---
+
+## Ethical / Responsible Use
+
+This repository evaluates facial emotion recognition and perception under controlled research settings.
+Please follow:
+
+- dataset licenses and consent requirements
+- provider policies for API-based models
+- local regulations regarding biometric data
+
+
