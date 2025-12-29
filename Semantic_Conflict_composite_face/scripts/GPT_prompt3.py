@@ -418,7 +418,7 @@ class EmotionAnalyzer:
 
 
 def main():
-    api_key = "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"
+    api_key = ""
 
     # 示例图片路径设置
     examples_folder = r"C:\Users\22688\Desktop\赵琳第二问\Image differentiation"
